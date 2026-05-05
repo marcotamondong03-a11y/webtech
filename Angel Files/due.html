@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mark Angel Due — Student Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Scroll progress bar — width updated by script.js -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <button onclick="history.back()" class="nav-brand" title="Go Back"><span>Student</span>Profile</button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#info">Skills</a></li>
+    <li><a href="#background">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="hero-content">
+    <div class="hero-greeting">Welcome</div>
+    <h1 class="hero-name">Hi! I'm Mark<br><span class="accent" id="typedName"></span></h1>
+    <p class="hero-tagline">Gym Goer <span class="tag-sep">·</span> Volleyball Player <span class="tag-sep">·</span> Student</p>
+    <p class="hero-desc">A student driven by the goal of self-improvement and becoming the best version of himself.</p>
+
+    <!-- Icon links: email, Instagram, location -->
+    <div class="hero-meta">
+      <a href="mailto:duemarkangel@gmail.com" class="meta-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        duemarkangel@gmail.com
+      </a>
+      <a href="#" class="meta-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @itsyourdue_date
+      </a>
+      <span class="meta-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Dagupan City, Pangasinan
+      </span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#about" class="btn-primary">Learn More ↓</a>
+      <a href="#background" class="btn-outline">View Experience</a>
+    </div>
+  </div>
+
+  <!-- Profile photo (right side) -->
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="assets/379f75f4-a39e-4a93-95e0-1373799cedb4.jpg" alt="Mark Angel Due" />
+  </div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <nav class="section-nav"><div class="nav-brand"><span>About</span> Me</div></nav>
+  <p class="about-email">duemarkangel@gmail.com</p>
+
+  <div class="about-body">
+    <!-- Bio with red left border -->
+    <p class="about-quote">Hi, I'm Mark Angel Reyes Due, a 19-year-old from Alaminos City, Pangasinan. I enjoy playing volleyball and working out at the gym — not just to stay fit but to keep myself disciplined and focused. I'm always pushing myself to grow, one step at a time.</p>
+
+    <!-- Interest/personality tags -->
+    <div class="traits-row">
+      <div class="trait-pill">Volleyball</div>
+      <div class="trait-pill">Fitness</div>
+      <div class="trait-pill">Journalism</div>
+      <div class="trait-pill">Disciplined</div>
+      <div class="trait-pill">Team Player</div>
+      <div class="trait-pill">Self-Improver</div>
+    </div>
+
+    <!-- Photo grid — clicking opens lightbox (handled by script.js) -->
+    <div class="about-photos">
+      <div class="photo-card">
+        <img src="assets/0cb070ec-616e-428f-ad25-16ee73bf906b.jpg" alt="Volleyball Team" />
+        <div class="photo-caption">Volleyball Team</div>
+      </div>
+      <div class="photo-card">
+        <img src="assets/ca28560e-9e7d-4f68-b6ad-3a96b875649a.jpg" alt="Events" />
+        <div class="photo-caption">Events</div>
+      </div>
+      <div class="photo-card">
+        <img src="assets/35692ab7-f47e-40f9-90b4-108d296fb247.jpg" alt="Gym" />
+        <div class="photo-caption">Gym Life</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="info">
+  <h2 class="section-title">What Can <span>I Do</span></h2>
+
+  <!-- Filter buttons — script.js shows/hides cards based on data-filter vs data-category -->
+  <div class="filter-tabs">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="sport">Sports</button>
+    <button class="filter-btn" data-filter="soft">Soft Skills</button>
+    <button class="filter-btn" data-filter="work">Work</button>
+  </div>
+
+  <div class="skills-grid" id="skillsGrid">
+    <div class="skill-card" data-category="sport">
+      <img src="assets/816e9372-dad7-439a-90ea-0f9d8d40f5a0.jpg" alt="Volleyball" />
+      <div class="skill-overlay"><span>Volleyball</span><small>Setter · Spiker · Team Play</small></div>
+    </div>
+    <div class="skill-card" data-category="sport">
+      <img src="assets/9dcacb16-4472-4043-ba5f-d0221076787e.jpg" alt="Fitness & Gym" />
+      <div class="skill-overlay"><span>Fitness &amp; Gym</span><small>Strength · Conditioning</small></div>
+    </div>
+    <div class="skill-card" data-category="work">
+      <img src="assets/download (12).jpg" alt="News Writing" />
+      <div class="skill-overlay"><span>News Writing</span><small>Journalism · Press Conference</small></div>
+    </div>
+    <div class="skill-card" data-category="work">
+      <img src="assets/The Three Fundamental Principles Of Online Marketing.jpg" alt="Sales" />
+      <div class="skill-overlay"><span>Sales &amp; Customer Service</span><small>Retail · Communication</small></div>
+    </div>
+    <div class="skill-card" data-category="soft">
+      <img src="assets/69f89d8c-b8eb-4bb0-9f5a-934c5b975282.jpg" alt="Self Discipline" />
+      <div class="skill-overlay"><span>Self Discipline</span><small>Consistency · Mindset</small></div>
+    </div>
+    <div class="skill-card" data-category="soft">
+      <img src="assets/fd5d62c7-5308-4a98-ae3e-8fbb095d8efd.jpg" alt="Teamwork" />
+      <div class="skill-overlay"><span>Teamwork</span><small>Leadership · Collaboration</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="background">
+  <nav class="section-nav"><div class="nav-brand">My <span>Experience</span></div></nav>
+
+  <div class="bg-layout">
+    <!-- Sidebar photo (hidden on mobile via CSS) -->
+    <div class="bg-photo">
+      <img src="assets/4b58cf46-d77a-4b85-b638-02739c3b8bf8.jpg" alt="Mark Angel Due" />
+    </div>
+
+    <!-- Timeline: year left, details right -->
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2018–2019</div>
+        <div class="tl-body">
+          <div class="tl-badge tl-badge--award">Award</div>
+          <div class="tl-title">Regional School Press Conference (RSPC) – Primary Level</div>
+          <div class="tl-sub">3rd Place – News Writing</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2023–2024</div>
+        <div class="tl-body">
+          <div class="tl-badge tl-badge--sport">Sport</div>
+          <div class="tl-title">Regional 1 Athletic Association (R1AA) – Secondary Level</div>
+          <div class="tl-sub">Certificate of Participation – Volleyball Men's</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025–2026</div>
+        <div class="tl-body">
+          <div class="tl-badge tl-badge--work">Work</div>
+          <div class="tl-title">6 Months in Fitness Industry</div>
+          <div class="tl-sub">Professional Experience</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025–2026</div>
+        <div class="tl-body">
+          <div class="tl-badge tl-badge--award">Award</div>
+          <div class="tl-title">UDD Intramurals – Tertiary Level</div>
+          <div class="tl-sub">2nd Place – Volleyball Men's</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2025–2026</div>
+        <div class="tl-body">
+          <div class="tl-badge tl-badge--work">Work</div>
+          <div class="tl-title">Savemore Market – Work Experience</div>
+          <div class="tl-sub">3 Months – Sales Clerk</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <nav class="section-nav"><div class="nav-brand">Get In <span>Touch</span></div></nav>
+
+  <div class="contact-layout">
+    <!-- Left: intro text -->
+    <div class="contact-left">
+      <p class="contact-eyebrow">Let's Connect</p>
+      <h2 class="contact-heading">Don't hesitate<br>to reach out.</h2>
+      <p class="contact-sub">Whether it's about sports, fitness, work opportunities, or just a quick hello — I'm always open to a conversation.</p>
+    </div>
+
+    <!-- Right: contact cards (phone, email, Instagram, location) -->
+    <div class="contact-cards">
+      <a href="tel:09095201662" class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 2.98 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-label">Phone</span>
+          <span class="contact-card-value">0909 520 1662</span>
+          <span class="contact-card-action">Tap to call →</span>
+        </div>
+      </a>
+      <a href="mailto:duemarkangel@gmail.com" class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">duemarkangel@gmail.com</span>
+          <span class="contact-card-action">Tap to email →</span>
+        </div>
+      </a>
+      <a href="#" class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-label">Instagram</span>
+          <span class="contact-card-value">@itsyourdue_date</span>
+          <span class="contact-card-action">View profile →</span>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-label">Location</span>
+          <span class="contact-card-value">Dagupan City, Pangasinan</span>
+          <span class="contact-card-sub">Guilig St. Brgy. Pogo Chico</span>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-socials">
+    <a href="mailto:duemarkangel@gmail.com" class="social-btn" title="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+    </a>
+    <a href="#" class="social-btn" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+  <!-- Link back to the group class website -->
+  <div class="footer-group-btn">
+    <a href="index.html" class="btn-group-site">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>
+      Back to Group Website
+    </a>
+  </div>
+  <p class="footer-copy">© 2025 Mark Angel Due</p>
+</footer>
+
+<!-- Back to top button — script.js adds .visible when user scrolls down -->
+<button class="back-to-top" id="backToTop" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- Lightbox — hidden overlay for viewing about photos fullscreen -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">✕</button>
+  <button class="lightbox-prev" id="lightboxPrev">‹</button>
+  <div class="lightbox-inner"><img id="lightboxImg" src="" alt="" /></div>
+  <button class="lightbox-next" id="lightboxNext">›</button>
+</div>
+
+<button onclick="location.href='index.html'" class="nav-brand" title="Go to Homepage"><span>Student</span>Profile</button>
+
+<script src="script.js"></script>
+</body>
+</html>
