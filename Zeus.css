@@ -1,0 +1,1973 @@
+/* ===================================================
+   GLOBAL / ROOT
+   =================================================== */
+
+.zeus-2 {
+  width: 100%;
+  position: relative;
+  background-image: url('Personal website assets/BG.png'),
+                    linear-gradient(180deg, #aa4545, #441c1c);
+  background-repeat: repeat;
+  background-size: 105%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 390.6px var(--padding-0) 165.7px;
+  box-sizing: border-box;
+  isolation: isolate;
+  gap: 28.4px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 28.8px;
+  color: var(--color-lightgray);
+  font-family: var(--font-inter);
+}
+
+/* ===================================================
+   NAVBAR
+   =================================================== */
+
+.top-ui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 48px;
+  background-color: var(--color-lightgray);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+  z-index: 99;
+  flex-shrink: 0;
+}
+
+.top-ui-child {
+  display: none;
+}
+
+.line-parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+/* Logo */
+.nav-logo {
+  font-family: var(--font-inter);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 20px;
+  color: #cc0000;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Divider lines */
+.frame-child {
+  height: 24px;
+  width: 1px;
+  border-right: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.frame-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Nav links row */
+.frame-parent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  color: var(--color-gray);
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual nav items — all use same base */
+.home-wrapper,
+.home-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.home,
+.home3,
+.home4,
+.home5 {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  color: var(--color-gray);
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.home:hover,
+.home3:hover,
+.home4:hover,
+.home5:hover {
+  color: #ff0000;
+}
+
+/* Inner text spans — let them size naturally */
+.home2,
+.profile,
+.contacts,
+.works {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   HERO / RECTANGLE PARENT
+   =================================================== */
+
+.rectangle-parent {
+  width: 100%;
+  height: 1798.1px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 37.8px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.frame-inner {
+  position: absolute;
+  top: 474px;
+  left: -100px;
+  background-color: var(--color-gainsboro);
+  width: 385px;
+  height: 8px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.rectangle-div {
+  position: absolute;
+  top: 472.4px;
+  left: 562px;
+  background-color: var(--color-gainsboro);
+  width: 728px;
+  height: 8.7px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.home-pic {
+  position: absolute;
+  top: -148.6px;
+  left: 700px;
+  width: 876.8px;
+  height: 1081.2px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.untitled-design-6-1,
+.untitled-design-6-2,
+.untitled-design-6-3 {
+  position: absolute;
+  height: calc(100% - 1.6px);
+  top: 0;
+  bottom: 1.6px;
+  left: 0;
+  max-height: 100%;
+  width: 813.3px;
+  object-fit: cover;
+}
+
+.untitled-design-6-3 {
+  top: 1.6px;
+  bottom: 0;
+  left: 22.8px;
+  z-index: 1;
+}
+
+.untitled-design-6-1 {
+  top: 1.6px;
+  bottom: 0;
+  left: 63.5px;
+  z-index: 2;
+}
+
+.intro-pic {
+  position: absolute;
+  top: 770px;
+  left: 73px;
+  width: 709px;
+  height: 856px;
+  max-width: 100%;
+  z-index: 3;
+  flex-shrink: 0;
+}
+
+.untitled-design-2-1,
+.untitled-design-2-2,
+.untitled-design-2-3 {
+  height: calc(100% - 1px);
+  max-height: 100%;
+  width: 644px;
+  object-fit: cover;
+}
+
+.untitled-design-2-2 {
+  position: absolute;
+  top: 1px;
+  bottom: 0;
+  left: 0;
+  flex-shrink: 0;
+}
+
+.untitled-design-2-3 {
+  position: absolute;
+  top: 0;
+  bottom: 1px;
+  left: 65px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.untitled-design-2-1 {
+  position: absolute;
+  top: 0;
+  bottom: 1px;
+  left: 24px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.graphic {
+  position: absolute;
+  margin: 0;
+  top: 327.7px;
+  right: -86px;
+  font-size: inherit;
+  line-height: 41.8px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 4;
+  flex-shrink: 0;
+}
+
+.alex-zeus-parent {
+  position: absolute;
+  top: 245px;
+  right: -326.2px;
+  width: 504.2px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  font-size: 85.7px;
+  color: var(--color-gainsboro);
+  flex-shrink: 0;
+}
+
+.alex-zeus,
+.alex-zeus-wrapper {
+  flex: 1;
+  max-width: 100%;
+  position: relative;
+}
+
+.alex-zeus {
+  margin: 0;
+  font-size: inherit;
+  line-height: 96.3px;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 6;
+}
+
+.alex-zeus-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  margin-left: -486.2px;
+  color: var(--color-black);
+}
+
+.alex-zeus2 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 96.3px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 5;
+}
+
+.about-me-icon {
+  position: absolute;
+  top: 1079.8px;
+  left: 1px;
+  width: 1436.8px;
+  height: 718.3px;
+  object-fit: contain;
+  z-index: 9;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   PORTFOLIO TITLE
+   =================================================== */
+
+.prints-container-wrapper {
+  width: 906.2px;
+  padding: var(--padding-0) 69px 388.7px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  font-size: 86.8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.prints-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-16);
+  max-width: 100%;
+}
+
+.port-wrapper {
+  width: 252.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4.3px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+}
+
+.port {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+}
+
+.this-is-lex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 37.4px 19px var(--padding-0) var(--padding-0);
+  font-size: 36.7px;
+  color: var(--color-gainsboro);
+}
+
+.this-is-lex,
+.folio {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.folio {
+  flex: 1;
+  font-size: 85.6px;
+  display: inline-block;
+  font-weight: 800;
+  min-width: 179px;
+}
+
+/* ===================================================
+   WHO AM I SECTION
+   =================================================== */
+
+.zeus-2-inner {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) var(--padding-0) 691.6px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 84.4px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.frame-group {
+  width: 828.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-0) var(--padding-0) var(--padding-0) var(--padding-20);
+  box-sizing: border-box;
+  gap: 29.9px;
+  max-width: 100%;
+}
+
+.rectangle-group {
+  align-self: stretch;
+  height: 102px;
+  position: relative;
+}
+
+.frame-child2 {
+  position: absolute;
+  height: calc(100% - 22.1px);
+  top: 11px;
+  bottom: 11.1px;
+  left: 0;
+  box-shadow: 0 3.2px 3.2px rgba(0, 0, 0, 0.25);
+  border-radius: 63.3px;
+  background-color: var(--color-gainsboro);
+  border: 0.8px solid var(--color-black);
+  box-sizing: border-box;
+  width: 846.8px;
+  z-index: 4;
+  flex-shrink: 0;
+}
+
+.identity-info {
+  position: absolute;
+  top: 0;
+  left: 20.2px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.who-am-i,
+.who-am-i2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  text-shadow: var(--text-shadow-1);
+  z-index: 8;
+}
+
+.who-am-i2 {
+  color: var(--color-rosybrown);
+  z-index: 7;
+  margin: 0 0 0 -430px;
+}
+
+.this-is-lex-button {
+  width: 771.3px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 27px;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 37.8px;
+}
+
+.frame-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.illustrator-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 31px;
+}
+
+.illustrator {
+  margin: 0;
+  width: 273px;
+  position: relative;
+  font-size: inherit;
+  line-height: 41.8px;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.frame-div {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 25.9px;
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-top: -8px;
+  position: relative;
+}
+
+.artist-wrapper {
+  width: 187.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 51.8px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+}
+
+.artist {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 41.8px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 5;
+}
+
+.m-gimena-parent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  min-width: 327px;
+  max-width: 100%;
+  font-size: 85.7px;
+  color: var(--color-gainsboro);
+}
+
+.m-gimena,
+.artist-container {
+  flex: 1;
+  max-width: 100%;
+  position: relative;
+}
+
+.m-gimena {
+  margin: 0;
+  font-size: inherit;
+  line-height: 96.3px;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 8;
+}
+
+.artist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  margin-left: -487.2px;
+  color: var(--color-black);
+}
+
+.m-gimena2 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 96.3px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 7;
+}
+
+/* ===================================================
+   PUBMATS SECTION
+   =================================================== */
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: var(--padding-0) 61px 56.6px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 165.7px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.illustration-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.pubmats {
+  margin: 0 !important;
+  position: absolute;
+  right: -17.3px;
+  bottom: -15.4px;
+  display: inline-block;
+  height: 100%;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.pubmats2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  color: var(--color-lightgray);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.illustration-container-child {
+  position: absolute;
+  margin: 0 !important;
+  width: 1200px;
+  height: 65px;
+  top: -18px;
+  left: -100px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   PUBMATS IMAGES
+   =================================================== */
+
+.contact-fields {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-0) var(--padding-20) 168.1px 24px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  position: relative;
+  isolation: isolate;
+}
+
+.frame-parent2 {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  gap: 184.9px;
+  flex-shrink: 0;
+}
+
+.printing-press-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 226px;
+  max-width: 100%;
+}
+
+.printing-press-icon {
+  width: 340px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.printing-press-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.family-day-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 12px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.family-day-icon {
+  height: 360px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.family-day-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.works-toggle-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: 315px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  min-width: 348px;
+}
+
+.works-toggle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 100%;
+  gap: 242.9px;
+}
+
+.psu-icon {
+  width: 380px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.psu-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.feast-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 17px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.feast-icon {
+  height: 380px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.feast-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.contact-fields-child {
+  position: absolute;
+  margin: 0 !important;
+  height: 102px;
+  width: 1256px;
+  bottom: -61px;
+  left: -152px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   PERSONAL WORKS SECTION
+   =================================================== */
+
+.zeus-2-child {
+  width: 1347px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  padding: var(--padding-0) 73px 175.6px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 165.7px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.frame-parent3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  gap: 50.6px;
+}
+
+.personal-works-parent {
+  width: 940px;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.personal-works {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  display: inline-block;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.personal-works2 {
+  position: absolute;
+  margin: 0 !important;
+  top: -15.4px;
+  left: -17.3px;
+  display: inline-block;
+  font-weight: 800;
+  color: var(--color-lightgray);
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.illustration-cards-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+.illustration-cards {
+  width: 1157px;
+  display: flex;
+  align-items: flex-end;
+  gap: 30.3px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.illustration-cards-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) var(--padding-0) 9.4px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.frame-parent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  gap: 0.1px;
+}
+
+.frame-parent5 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.gyomei-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  flex-shrink: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gyomei,
+.nanami {
+  width: 280px;
+  height: auto;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.gyomei:hover,
+.nanami:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.gyomei-child {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.sylus-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sylus-icon {
+  width: 280px;
+  position: relative;
+  top: 30px;
+  left: 60%;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.sylus-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.banner-icon {
+  width: 270px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.banner-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+/* ===================================================
+   ILLUSTRATIONS SECTION HEADER
+   =================================================== */
+
+.illustrations-header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-0) 74px 115.6px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 137.5px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.illustrations {
+  margin: 0 !important;
+  position: absolute;
+  right: -14.3px;
+  bottom: -12.8px;
+  display: inline-block;
+  height: 100%;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.illustrations2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  color: var(--color-lightgray);
+  z-index: 1;
+}
+
+.illustrations-header-child {
+  position: absolute;
+  margin: 0 !important;
+  height: 102px;
+  width: 1427px;
+  top: -62px;
+  right: -167px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   ILLUSTRATIONS / MAIN CONTENT
+   =================================================== */
+
+.frame-main {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-0) var(--padding-0) var(--padding-0) 21px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 28.8px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+.frame-parent6 {
+  height: 3347.6px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+
+.chainsaw-man-parent {
+  position: absolute;
+  top: 0;
+  left: 131px;
+  width: 1144.1px;
+  height: 806px;
+}
+
+.chainsaw-man-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.chainsaw-man-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.aigis {
+  position: absolute;
+  top: 295px;
+  left: 654px;
+  width: 370px;
+  height: 390px;
+}
+
+.group-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.group-div:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.instance-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.jbee-parent {
+  position: absolute;
+  top: 668px;
+  left: 0;
+  width: 100%;
+  height: 2679.6px;
+}
+
+.jbee-icon {
+  position: absolute;
+  top: 0;
+  left: 138px;
+  width: 430px;
+  height: 335px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.jbee-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+.elyu-icon {
+  position: absolute;
+  top: 408px;
+  left: 709px;
+  width: 430px;
+  height: 335px;
+  object-fit: cover;
+  z-index: 1;
+  flex-shrink: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, outline 0.25s ease;
+}
+.elyu-icon:hover {
+  outline: 4px solid #000;
+  box-shadow: 7px 7px 0px #000;
+}
+
+/* ===================================================
+   SKILLSET / PROFILE / EXPERIENCE
+   =================================================== */
+
+.skillset {
+  position: absolute;
+  top: 1121px;
+  left: 100px;
+  width: 516.1px;
+  height: 720.5px;
+  flex-shrink: 0;
+}
+
+.skillset-child {
+  position: absolute;
+  top: 38.1px;
+  left: 0;
+  width: 516.1px;
+  height: 682.4px;
+  object-fit: cover;
+}
+
+.avatar-1-icon {
+  position: absolute;
+  top: 501px;
+  left: 0;
+  width: 1500.1px;
+  height: 2000.1px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.group-icon {
+  position: absolute;
+  top: 1730px;
+  left: 46.3px;
+  width: 1081.1px;
+  height: 349.4px;
+  z-index: 3;
+}
+
+.frame-child3 {
+  position: absolute;
+  top: 1874.2px;
+  left: 755.9px;
+  width: 602.9px;
+  height: 336.2px;
+  object-fit: contain;
+  z-index: 4;
+  flex-shrink: 0;
+}
+
+.frame-child4 {
+  position: absolute;
+  top: 1959.2px;
+  left: 75.9px;
+  width: 612.8px;
+  height: 342.2px;
+  object-fit: contain;
+  z-index: 4;
+  flex-shrink: 0;
+}
+
+.frame-parent7 {
+  position: absolute;
+  top: 2200.9px;
+  left: 0;
+  width: 729.5px;
+  height: 478.7px;
+  z-index: 5;
+  flex-shrink: 0;
+}
+
+.frame-child5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.special-program-in {
+  position: absolute;
+  top: 191.31px;
+  left: 129.9px;
+  font-weight: 300;
+  color: var(--color-white);
+  transform: rotate(-7.4deg);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+.special-program-in2 {
+  position: absolute;
+  top: 189.31px;
+  left: 126.9px;
+  font-weight: 300;
+  color: var(--color-black);
+  transform: rotate(-7.4deg);
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+.campus-cartoonist {
+  position: absolute;
+  top: 315.35px;
+  left: 133.9px;
+  font-size: 29.5px;
+  font-weight: 300;
+  color: var(--color-white);
+  transform: rotate(-7.5deg);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+.campus-cartoonist2 {
+  position: absolute;
+  top: 313.35px;
+  left: 131.9px;
+  font-size: 29.5px;
+  font-weight: 300;
+  color: var(--color-black);
+  transform: rotate(-7.5deg);
+  transform-origin: 0 0;
+  z-index: 2;
+}
+
+.frame-child8 {
+  position: absolute;
+  top: 2107.2px;
+  left: 677.9px;
+  width: 758.3px;
+  height: 481.6px;
+  object-fit: contain;
+  z-index: 6;
+  flex-shrink: 0;
+}
+
+.divisional-and-regional {
+  position: absolute;
+  margin: 0 !important;
+  right: 127.1px;
+  bottom: 205.12px;
+  height: 175px;
+  display: inline-block;
+  font-weight: 300;
+  color: var(--color-white);
+  transform: rotate(-7.4deg);
+  transform-origin: 0 0;
+  z-index: 7;
+  flex-shrink: 0;
+}
+
+.divisional-and-regional2 {
+  position: absolute;
+  margin: 0 !important;
+  right: 130.1px;
+  bottom: 206.12px;
+  height: 175px;
+  display: inline-block;
+  font-weight: 300;
+  color: var(--color-black);
+  transform: rotate(-7.4deg);
+  transform-origin: 0 0;
+  z-index: 8;
+  flex-shrink: 0;
+}
+
+/* ===================================================
+   CONTACTS SECTION
+   =================================================== */
+
+.contacts-panel {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 33px;
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 70.1px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.illustrator-container {
+  width: 1356px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 100%;
+}
+
+.illustrations-buttons-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-20);
+  max-width: 100%;
+}
+
+.illustrations-buttons {
+  height: 317px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.lets-get-in-touch {
+  align-self: stretch;
+  height: 274.3px;
+  position: relative;
+  overflow: hidden;
+  object-fit: contain;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.avatar-chibi-icon {
+  width: 391px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.illustrator-container-inner {
+  width: 1310px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 4px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.frame-parent8 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40.9px;
+  max-width: 100%;
+}
+
+.frame-wrapper2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: var(--padding-0) 27px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.fb-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14.7px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.fb {
+  width: 1052px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 63px 132px 64.3px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.fb-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-data {
+  margin: 0;
+  width: 602px;
+  position: relative;
+  font-size: inherit;
+  display: inline-block;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 1;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.details-layout {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 58.3px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+.email {
+  display: flex;
+  align-items: flex-start;
+  padding: 100.9px 216px 45.2px 243px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 26px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.email-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  top: 0;
+  right: 50px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 31.1px var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+
+.gimenaalex6gmailcom {
+  margin: 0;
+  position: relative;
+  top: -50px;
+  left: -80px;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.fb2 {
+  width: 1052px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 63px 288px 64.3px;
+  box-sizing: border-box;
+  isolation: isolate;
+  max-width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.alxee26-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.alxee26 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 1;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.alxee26-link:hover .alxee26,
+.alxee26-link:hover .gimenaalex6gmailcom,
+.alxee26-link:hover .portfolio-link-text {
+  color: #ff0000;
+}
+
+.portfolio-link-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 100.9px 216px 45.2px 243px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 26px;
+  max-width: 100%;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.portfolio-link-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  top: 0;
+  right: 50px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.portfolio-link-text {
+  margin: 0;
+  position: relative;
+  top: -46px;
+  left: -10px;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 800;
+  font-family: inherit;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+/* ===================================================
+   RESPONSIVE — 1400px
+   =================================================== */
+
+@media screen and (max-width: 1400px) {
+  .prints-container-wrapper {
+    padding-left: 34px;
+    padding-right: 34px;
+    box-sizing: border-box;
+  }
+  .zeus-2-inner {
+    padding-bottom: 450px;
+    box-sizing: border-box;
+  }
+  .contact-info {
+    padding-left: var(--padding-30);
+    padding-right: var(--padding-30);
+    box-sizing: border-box;
+  }
+  .contact-fields {
+    padding-bottom: 71px;
+    box-sizing: border-box;
+  }
+  .frame-parent2 {
+    flex-wrap: wrap;
+    gap: 92px;
+  }
+  .printing-press-parent {
+    flex: 1;
+  }
+  .works-toggle-wrapper {
+    padding-top: 205px;
+    box-sizing: border-box;
+  }
+  .zeus-2-child {
+    padding-left: var(--padding-36);
+    padding-right: var(--padding-36);
+    padding-bottom: 74px;
+    box-sizing: border-box;
+  }
+  .illustration-cards {
+    flex-wrap: wrap;
+  }
+  .banner-icon {
+    flex: 1;
+  }
+  .illustrations-header-wrapper {
+    padding-left: 37px;
+    padding-right: 37px;
+    box-sizing: border-box;
+  }
+  .illustrations-buttons {
+    min-width: 100%;
+    flex: 1;
+  }
+  .illustrations-buttons-parent {
+    flex-wrap: wrap;
+  }
+  .lets-get-in-touch {
+    align-self: stretch;
+    width: 100%;
+  }
+  .avatar-chibi-icon {
+    flex: 1;
+  }
+  .fb,
+  .fb2 {
+    padding-left: 66px;
+    padding-right: 66px;
+    box-sizing: border-box;
+  }
+  .fb2 {
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+  .email {
+    flex-wrap: wrap;
+    padding-left: 71px;
+    padding-right: 58px;
+    box-sizing: border-box;
+  }
+}
+
+/* ===================================================
+   RESPONSIVE — 750px
+   =================================================== */
+
+@media screen and (max-width: 750px) {
+  .graphic {
+    font-size: var(--fs-30);
+    line-height: 33px;
+  }
+  .alex-zeus,
+  .alex-zeus2 {
+    font-size: var(--fs-43);
+    line-height: 58px;
+  }
+  .prints-container-wrapper {
+    padding-bottom: 253px;
+    box-sizing: border-box;
+  }
+  .prints-container {
+    flex-wrap: wrap;
+  }
+  .port {
+    font-size: var(--fs-43);
+  }
+  .this-is-lex {
+    font-size: 29px;
+  }
+  .folio {
+    font-size: var(--fs-43);
+  }
+  .zeus-2-inner {
+    padding-bottom: 292px;
+    box-sizing: border-box;
+  }
+  .who-am-i,
+  .who-am-i2 {
+    font-size: 42px;
+  }
+  .illustrator {
+    font-size: var(--fs-30);
+    line-height: 33px;
+  }
+  .frame-div {
+    flex-wrap: wrap;
+  }
+  .artist {
+    font-size: var(--fs-30);
+    line-height: 33px;
+  }
+  .m-gimena,
+  .m-gimena2 {
+    font-size: var(--fs-43);
+    line-height: 58px;
+  }
+  .pubmats,
+  .pubmats2 {
+    font-size: 66px;
+  }
+  .frame-parent2 {
+    gap: 46px;
+  }
+  .printing-press-parent {
+    gap: 113px;
+    min-width: 100%;
+  }
+  .works-toggle-wrapper {
+    padding-top: 133px;
+    box-sizing: border-box;
+  }
+  .works-toggle {
+    gap: 121px;
+  }
+  .zeus-2-child {
+    padding-bottom: 48px;
+    box-sizing: border-box;
+  }
+  .frame-parent3 {
+    gap: 25px;
+  }
+  .personal-works,
+  .personal-works2 {
+    font-size: 66px;
+  }
+  .illustration-cards {
+    gap: 15px;
+  }
+  .illustration-cards-inner {
+    min-width: 100%;
+  }
+  .frame-parent5 {
+    flex-wrap: wrap;
+  }
+  .gyomei-wrapper {
+    padding-top: 42px;
+    box-sizing: border-box;
+  }
+  .illustrations,
+  .illustrations2 {
+    font-size: 55px;
+  }
+  .frame-parent8 {
+    gap: var(--gap-20);
+  }
+  .profile-data {
+    font-size: 56px;
+  }
+  .email {
+    padding-left: 35px;
+    padding-right: 29px;
+    box-sizing: border-box;
+  }
+  .gimenaalex6gmailcom {
+    font-size: 47px;
+  }
+  .fb2 {
+    padding-left: var(--padding-72);
+    padding-right: var(--padding-72);
+    box-sizing: border-box;
+  }
+  .alxee26 {
+    font-size: 56px;
+  }
+  .portfolio-link-text {
+    font-size: 47px;
+  }
+  .nav-logo {
+    font-size: 16px;
+  }
+}
+
+/* ===================================================
+   RESPONSIVE — 450px
+   =================================================== */
+
+@media screen and (max-width: 450px) {
+  .graphic {
+    font-size: var(--fs-23);
+    line-height: 25px;
+  }
+  .alex-zeus,
+  .alex-zeus2 {
+    font-size: var(--fs-26);
+    line-height: 39px;
+  }
+  .port,
+  .folio {
+    font-size: var(--fs-26);
+  }
+  .this-is-lex {
+    font-size: 22px;
+  }
+  .who-am-i,
+  .who-am-i2 {
+    font-size: 25px;
+  }
+  .artist,
+  .illustrator {
+    font-size: var(--fs-23);
+    line-height: 25px;
+  }
+  .m-gimena,
+  .m-gimena2 {
+    font-size: var(--fs-26);
+    line-height: 39px;
+  }
+  .pubmats,
+  .pubmats2 {
+    font-size: 41px;
+  }
+  .frame-parent2 {
+    gap: 23px;
+    flex-wrap: wrap;
+  }
+  .printing-press-parent {
+    flex: 1;
+  }
+  .works-toggle-wrapper {
+    padding-top: 86px;
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .works-toggle {
+    gap: 61px;
+  }
+  .personal-works,
+  .personal-works2 {
+    font-size: 41px;
+  }
+  .illustrations,
+  .illustrations2 {
+    font-size: 34px;
+  }
+  .divisional-and-regional,
+  .divisional-and-regional2,
+  .special-program-in,
+  .special-program-in2 {
+    font-size: var(--fs-23);
+  }
+  .campus-cartoonist,
+  .campus-cartoonist2 {
+    font-size: var(--fs-24);
+  }
+  .fb,
+  .fb2 {
+    padding-left: 66px;
+    padding-right: 66px;
+    box-sizing: border-box;
+  }
+  .fb2 {
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+  .profile-data {
+    font-size: 42px;
+  }
+  .gimenaalex6gmailcom {
+    font-size: 35px;
+  }
+  .alxee26 {
+    font-size: 42px;
+  }
+  .portfolio-link-text {
+    font-size: 35px;
+  }
+  .zeus-2-child {
+    padding-bottom: 74px;
+    box-sizing: border-box;
+  }
+  .illustration-cards {
+    flex-wrap: wrap;
+  }
+  .banner-icon {
+    flex: 1;
+  }
+  .illustrations-buttons {
+    min-width: 100%;
+  }
+  .nav-logo {
+    font-size: 14px;
+  }
+  .frame-parent {
+    gap: 12px;
+  }
+}
